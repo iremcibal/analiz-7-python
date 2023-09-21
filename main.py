@@ -86,3 +86,83 @@ print(totalText)
 #f-string
 totalText = f"Hoşgeldiniz {userName}"
 print(totalText)
+
+#Diziler
+
+sayilar = [100,200,300,"Merhaba"]
+
+#Programcı olarak sıfırdan saymaya başlıyoruz 
+#index indis => 0 başlangıc değeri -1 son index
+print(sayilar[1])
+print(sayilar[0])
+print(sayilar[-1])
+
+print(sayilar)
+
+degisken =[100,1,2,3]
+sayilar.append(degisken)
+print(sayilar)
+print(sayilar[4][1])
+sayilar.append(600)
+print(sayilar)
+
+sayilar.pop(3) #indexteki elemanı siler - default olarak son index
+print(sayilar)
+
+sayilar.remove(100) #Değere göre siler - Bulduğu ilk veriyi siler
+print(sayilar)
+
+dizi=[10,20,30] #tek bir değer değil listedeki tüm elemanları ekler
+sayilar.extend(dizi)
+print(sayilar)
+
+sayilar.clear() 
+print(sayilar)
+
+#karar yapıları 
+
+ortalamaNot = input("Lütfen ortalamanızı giriniz.")
+#string=> int dönüşümü
+#type conversion
+print(type(ortalamaNot))
+ortalamaNotInteger= int(ortalamaNot)
+print(type(ortalamaNotInteger))
+
+#indent => 1 tabl içerisinde olmak
+""" if ortalamaNotInteger > 50 :
+    print("Harika")
+    if ortalamaNotInteger >80:
+        print("Başarılı")
+else:
+    print("Kaldınız") """
+
+
+if ortalamaNotInteger >80:
+    print("Başarılı")
+#else if => elif
+elif ortalamaNotInteger >60:
+    print("ortalama")
+elif ortalamaNotInteger >50:
+    print("normal")
+else:
+    print("Kaldınız")
+
+
+studentCount=44
+if studentCount >20:
+    print("Ögrenciler derse hazır")
+
+#10:05 :)
+
+
+
+
+
+
+
+
+
+
+
+
+
